@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mail.css">
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/mail.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <h2>Clientside Bulk Mailing Client</h2>
+      <!-- we put action to void to still be able to submit without response from server-->
+      <form onsubmit="sendMail()" action="javascript:void(0);">
+        <div class="upload">
+          <input type="button" class="btn btn-primary" id="up_btn" value="Upload Mailing List"/>
+          <input type="file" id="filename">
+          <input type="button" class="btn btn-primary" id="up_tmp_btn" value="Upload Template"/>
+          <input type="file" id="templatefile">
+        </div>
+        <div class="subject">
+          <label class="inline">Subject:</label>
+          <input type="text" id='esubject' class="form-control">
+        </div>
+        <input type="submit" class="btn btn-success mail_btn" value="Mail">
+      </form>
+      <div id="csvimporthint"></div>
+      <div id="templateimporthint"></div>
+    </div>
+  </body>
+</html>

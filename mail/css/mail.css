@@ -1,0 +1,69 @@
+body {
+  margin:50px 0px;
+  padding:0px;
+  text-align:center;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: 300;
+}
+
+.main {
+  width:520px;
+  height:290px;
+  margin:0px auto;
+  text-align:left;
+  padding:15px;
+  border-radius: 5px;
+  background-color:#3498db;
+}
+
+.upload {
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/*.feedback {
+  display: none;
+  color: #18bc9c;
+}*/
+
+input[type="file"] {
+  background: #000;
+  color: red;
+  opacity: 0;
+  cursor: pointer;
+  display: inline-block;
+  width: 0px;
+  visibility: hidden;
+}
+
+.subject label {
+  display: inline-block;
+  color: white;  
+  width: 70px;
+  font-weight: 300;
+}
+.subject input {
+  display: inline-block;
+}
+.subject {
+  width: 300px;
+  margin: 0px auto;
+  padding-bottom: 15px;
+}
+.form-control {
+  width: 190px;
+  height: 30px;
+}
+
+.mail_btn{
+  width: 100px;
+  float:right;
+  margin: 10px;
+}
